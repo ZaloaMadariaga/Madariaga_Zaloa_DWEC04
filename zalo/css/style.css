@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.movie-list {
+    display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 7 columnas fijas */
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px; /* Reducir el padding para hacerlo más estrecho */
+    background-color: #333;
+    color: white;
+    width: 100%; /* Ocupar todo el ancho */
+    bottom: 0; /* Pegarlo al fondo */
+    left: 0; /* Alinear a la izquierda */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+.comparison-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.comparison-item {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-info img {
+    width: 100%;
+    height: auto;
+}
+/* Estilo para el formulario en un recuadro centrado */
+#compare-form {
+    max-width: 400px;
+    margin: 20px auto; /* Centrar el recuadro */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Espaciado entre los selectores */
+#compare-form div {
+    margin-bottom: 20px;
+}
+
+/* Botón más visible */
+button[type="submit"] {
+    background-color: #2e3953;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ancho completo del recuadro */
+}
+
+button[type="submit"]:hover {
+    background-color: #abc3de;
+}
+/* Estilo para el texto "Comparando:" */
+.comparison-header {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.comparison-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Eliminar margen predeterminado */
+}
+
+/* Ajustar el diseño de las tarjetas de comparación */
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px; /* Limitar el ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Reducir el tamaño de las tarjetas */
+.comparison-item {
+    width: 80%; /* Reducir el ancho */
+    background-color: white;
+    padding: 15px; /* Reducir el padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Reducir el tamaño de las imágenes */
+.comparison-item img {
+    width: 90%; /* Reducir tamaño */
+    height: auto;
+    margin: 0 auto; /* Centrar imagen */
+    display: block;
+}
+
+/* Ajustar el texto dentro de las tarjetas */
+.comparison-item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.comparison-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.compare{
+    display: flex;
+    flex-direction: column;
+}
+
+#details-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#details-form div {
+    margin-bottom: 20px;
+}
+
+#movie-details {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#movie-details img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 300px;
+}
+
+#movie-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    margin-left: 1rem;
+}
+
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie-info{
+    display: flex;
+}
+
+.comparison-item .comparison-value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.comparison-item .comparison-icon {
+    width: 20px;
+    height: auto;
+    align-items: center;
+}
