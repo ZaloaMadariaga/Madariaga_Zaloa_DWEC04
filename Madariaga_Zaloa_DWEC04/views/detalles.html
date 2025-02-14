@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Película</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Detalles de Película</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="comparar.html">Comparar Películas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Selecciona una película para ver los detalles</h2>
+        <form id="details-form">
+            <div>
+                <label for="movie">Película</label>
+                <select id="movie">
+                    <!-- Opciones serán llenadas dinámicamente con JavaScript -->
+                </select>
+            </div>
+            <button type="submit">Ver Detalles</button>
+        </form>
+
+        <div id="movie-details" class="comparison-container">
+            <!-- Aquí se mostrarán los detalles de la película -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CineExplorer</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/detalles.js"></script>
+</body>
+</html>
