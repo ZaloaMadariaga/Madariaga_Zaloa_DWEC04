@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Películas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Comparar Películas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+                <li><a href="detalles.html">Detalles</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Selecciona dos películas para comparar</h2> <br>
+        <form id="compare-form">
+            <div>
+                <label for="movie1">Película 1</label>
+                <select id="movie1">
+                    <!-- Las opciones serán llenadas dinámicamente por JavaScript -->
+                </select>
+            </div>
+            <div>
+                <label for="movie2">Película 2</label>
+                <select id="movie2">
+                    <!-- Las opciones serán llenadas dinámicamente por JavaScript -->
+                </select>
+            </div>
+            <button type="submit">Comparar</button>
+        </form>
+
+        <div id="comparison-result" class="comparison-container">
+            <!-- Aquí se mostrarán los detalles de la comparación -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SéptimoArte</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/comparar.js"></script>
+</body>
+</html>
